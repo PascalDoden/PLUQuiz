@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLU-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <h1>PLU-Quiz</h1>
+            <div class="stats">
+                <div id="score-display">Punkte: 0</div>
+                <div id="lives-display">Leben: ❤️❤️❤️</div>
+            </div>
+        </header>
+
+        <main id="game-area">
+            <img src="https://via.placeholder.com/400x300?text=Artikelbild" alt="Artikelbild" id="plu-image">
+
+            <div id="feedback-icon"></div>
+
+            <div class="input-area">
+                <label for="plu-input">Gib die 4-stellige PLU ein:</label>
+                <input type="number" id="plu-input" maxlength="4" placeholder="z.B. 7011">
+            </div>
+        </main>
+        
+        <div id="game-over-screen" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Dein Highscore: <span id="final-score">0</span></p>
+            <button id="restart-button">Neustart</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

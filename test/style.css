@@ -1,0 +1,95 @@
+/* Grundlegende Stile für die gesamte Seite */
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Der Hauptcontainer für unser Spiel */
+.game-container {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+/* Header-Bereich mit Titel und Stats */
+header h1 {
+    color: #333;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Das Artikelbild */
+#plu-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain; /* Stellt sicher, dass das Bild passt, ohne es zu verzerren */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Das Eingabefeld für die PLU */
+#plu-input {
+    width: 80%;
+    padding: 12px;
+    font-size: 1.5em;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Versteckt die Pfeile beim Zahlen-Input in den meisten Browsern */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Feedback-Icon (Haken oder X) */
+#feedback-icon {
+    font-size: 5em;
+    height: 80px; /* Feste Höhe, damit das Layout nicht springt */
+    line-height: 80px;
+}
+
+/* Game-Over-Bildschirm */
+#game-over-screen {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Eine Hilfsklasse, um Elemente zu verstecken */
+.hidden {
+    display: none;
+}
